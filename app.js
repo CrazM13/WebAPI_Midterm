@@ -96,12 +96,12 @@ app.get(/^\/(\d{5})$/, function(req, res, next) {
 			next();
 			return;
 		}
-		
+
 		res.json({
 			zipcode: zipcode,
 			temperature: data.currently.temperature,
-			summary: data.minutely.summary,
-			icon:data.minutely.icon
+			summary: data.minutely != null ? data.minutely.summary : '{No Minutely Data}',
+			icon: data.minutely != null ? data.minutely.icon : 'partly-cloudy-day'
 		});
 	});
 });
