@@ -1,0 +1,26 @@
+{
+  "name": "webapi_midterm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrazM13/WebAPI_Midterm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CrazM13/WebAPI_Midterm/issues"
+  },
+  "homepage": "https://github.com/CrazM13/WebAPI_Midterm#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "forecast.io": "0.0.11",
+    "morgan": "^1.9.1",
+    "zippity-do-dah": "0.0.3"
+  }
+}
